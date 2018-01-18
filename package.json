@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/YAOrangeTime16/bdd_tdd-travis#readme",
   "devDependencies": {
+    "coveralls": "^3.0.0",
     "jest": "^22.1.2"
   }
 }
