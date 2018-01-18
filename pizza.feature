@@ -5,20 +5,20 @@ Feture: calcurate the number of pizza and drink based on the number of members
     Each member eats drink 1/2 dl but the order is acceptable from 1dl
 
     Senario: Six people
-        Given pizzas and drinks are ready
-        When all 6 people should eat and drink
-        Then two pizzas are ordered
-        Then 3dl drinks are ordered
+        Given pizzas and drinks are ready to order
+        When 6 people order pizza and drink
+        Then returns two pizzas
+        Then returns 3dl drink
 
     Senario: Three people
-        Given pizzas and drinks are ready
-        When all 3 people should eat and drink
-        Then one pizza is ordered
-        Then one 2dl drink is ordered
+        Given pizzas and drinks are ready to order
+        When all 3 people order pizza and drink
+        Then returns one pizza
+        Then returns 2dl drink
 
     Senario: One person
-        Given pizzas and drinks are ready
-        When one person place an order
+        Given pizzas and drinks are ready to order
+        When one person order pizza and drink
         Then one pizza is ordered
         Then 1dl drink is ordered
 
@@ -28,5 +28,5 @@ Feature: calcurate the total cost of order
     Senario: Six people
         Given the total cost is zero
         When two pizzas and 3dl dinks are ordered
-        Then two pizzas and 3 drinks are added to the total cost
-        Then the total cost needs to be around 300kr
+        Then the price for 2x pizzas and 3x dl drink are added to the total cost
+        Then returns around 300kr
